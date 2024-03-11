@@ -16,5 +16,4 @@ function saveNote(newNote){
     })
 }
 
-
 module.exports = { saveNote };
