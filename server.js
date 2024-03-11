@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const { saveNote } = require('./writeAndRead.js');
+const { saveNote, deleteNote } = require('./public/assets/js/writeAndRead.js');
 const path = require('path');
 const PORT = 3001;
 const fs = require('fs');
@@ -31,6 +31,12 @@ app.get('/api/notes', (req, res) => {
 
 app.post('/api/notes', (req, res) => {
     saveNote(req.body);
+    res.send("note added");
+});
+
+app.delete("/api/notes/:id", (req, res) =>{
+    deleteNote(req.params.id);
+    res.send("note deleted");
 });
 
 app.listen(PORT, () => {
