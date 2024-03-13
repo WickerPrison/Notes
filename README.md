@@ -11,7 +11,7 @@
  ![image](https://github.com/WickerPrison/Notes/assets/92000023/e412c5e3-b6ca-48b6-b0b8-730ab1c19f2b)
 
   ## Deployment Link
-  https://wickerprison.github.io/Notes/
+  https://notes-osgp.onrender.com
  
   ## License
   Distributed under the MIT License. See LICENSE.txt for more information.
